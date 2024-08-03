@@ -67,7 +67,7 @@
 	<key>CYVendorName</key>
 	<string>Christoph Pfisterer</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.4</string>
+	<string>10.15</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
