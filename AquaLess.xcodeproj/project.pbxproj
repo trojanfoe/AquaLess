@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1769BF212C5E84D900B3460D /* FindPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1769BF192C5E84D800B3460D /* FindPanel.xib */; };
+		1769BF222C5E84D900B3460D /* ReadmeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1769BF1B2C5E84D800B3460D /* ReadmeWindow.xib */; };
+		1769BF232C5E84D900B3460D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1769BF1D2C5E84D900B3460D /* MainMenu.xib */; };
+		1769BF242C5E84D900B3460D /* PagerDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1769BF1F2C5E84D900B3460D /* PagerDocument.xib */; };
+		9D5DDE4A06089F2E00A2159C /* MacPAD.url in Resources */ = {isa = PBXBuildFile; fileRef = 9D5DDE4906089F2E00A2159C /* MacPAD.url */; };
+		9D748A4A0590CC48007AF501 /* aless in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8DEA20590C11B0039D27C /* aless */; };
+		9DB8DE9A0590C11B0039D27C /* AquaLess_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA64F07040C091400A81664 /* AquaLess_Protocol.h */; };
+		9DB8DE9B0590C11B0039D27C /* AquaLess_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* AquaLess_Prefix.h */; };
+		9DB8DE9D0590C11B0039D27C /* aless.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA64EEB040C00E300A81664 /* aless.m */; };
+		9DB8DE9F0590C11B0039D27C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		9DB8DEA90590C1370039D27C /* AquaLess_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* AquaLess_Prefix.h */; };
+		9DB8DEAA0590C1370039D27C /* PagerDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7C345B040965FC00A81664 /* PagerDocument.h */; };
+		9DB8DEAB0590C1370039D27C /* AquaLess_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA64F07040C091400A81664 /* AquaLess_Protocol.h */; };
+		9DB8DEAC0590C1370039D27C /* MyDocumentController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DA64F0C040C0D1000A81664 /* MyDocumentController.h */; };
+		9DB8DEAD0590C1370039D27C /* PagerTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5E8A4B040E088400A81664 /* PagerTextView.h */; };
+		9DB8DEAE0590C1370039D27C /* PagerWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D028CDD040FCB7B00A81664 /* PagerWindowController.h */; };
+		9DB8DEAF0590C1370039D27C /* FontHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D028CE1040FDF5900A81664 /* FontHelper.h */; };
+		9DB8DEB00590C1370039D27C /* InputParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D028CF9041284B700A81664 /* InputParser.h */; };
+		9DB8DEB10590C1370039D27C /* SmartTextInputParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D028CFD04138A4D00A81664 /* SmartTextInputParser.h */; };
+		9DB8DEB20590C1370039D27C /* HexdumpInputParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D028D010413A78700A81664 /* HexdumpInputParser.h */; };
+		9DB8DEB30590C1370039D27C /* RawTextInputParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4C893B0415118000A81664 /* RawTextInputParser.h */; };
+		9DB8DEB40590C1370039D27C /* ReadmeWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCE8DB50416511200A81608 /* ReadmeWindowController.h */; };
+		9DB8DEB50590C1370039D27C /* ToolInstaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC8FEA804191F9400A81608 /* ToolInstaller.h */; };
+		9DB8DEB60590C1370039D27C /* FindPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D6B421D042DBD5500F86BBE /* FindPanelController.h */; };
+		9DB8DEB70590C1370039D27C /* AGRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC53C8E045D6C1500C7B3CF /* AGRegex.h */; };
+		9DB8DEB80590C1370039D27C /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC53C91045D6C1500C7B3CF /* config.h */; };
+		9DB8DEB90590C1370039D27C /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC53C93045D6C1500C7B3CF /* internal.h */; };
+		9DB8DEBA0590C1370039D27C /* pcre.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC53C96045D6C1500C7B3CF /* pcre.h */; };
+		9DB8DEBC0590C1370039D27C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		9DB8DEBE0590C1370039D27C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		9DB8DEC00590C1370039D27C /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE8DB904165DCF00A81608 /* License.rtf */; };
+		9DB8DEC10590C1370039D27C /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE8DBB04165DCF00A81608 /* ReadMe.rtf */; };
+		9DB8DEC40590C1370039D27C /* scroll.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9D6053D60419F91700A81608 /* scroll.icns */; };
+		9DB8DEC70590C1370039D27C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		9DB8DEC80590C1370039D27C /* PagerDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C345C040965FC00A81664 /* PagerDocument.m */; };
+		9DB8DEC90590C1370039D27C /* MyDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA64F0B040C0D1000A81664 /* MyDocumentController.m */; };
+		9DB8DECA0590C1370039D27C /* PagerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5E8A4C040E088400A81664 /* PagerTextView.m */; };
+		9DB8DECB0590C1370039D27C /* PagerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D028CDE040FCB7B00A81664 /* PagerWindowController.m */; };
+		9DB8DECC0590C1370039D27C /* FontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D028CE2040FDF5900A81664 /* FontHelper.m */; };
+		9DB8DECD0590C1370039D27C /* InputParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D028CFA041284B700A81664 /* InputParser.m */; };
+		9DB8DECE0590C1370039D27C /* SmartTextInputParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D028CFE04138A4D00A81664 /* SmartTextInputParser.m */; };
+		9DB8DECF0590C1370039D27C /* HexdumpInputParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D028D020413A78700A81664 /* HexdumpInputParser.m */; };
+		9DB8DED00590C1370039D27C /* RawTextInputParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C893C0415118000A81664 /* RawTextInputParser.m */; };
+		9DB8DED10590C1370039D27C /* ReadmeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE8DB60416511200A81608 /* ReadmeWindowController.m */; };
+		9DB8DED20590C1370039D27C /* ToolInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8FEA904191F9400A81608 /* ToolInstaller.m */; };
+		9DB8DED30590C1370039D27C /* FindPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B421E042DBD5500F86BBE /* FindPanelController.m */; };
+		9DB8DED40590C1370039D27C /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC53C8F045D6C1500C7B3CF /* AGRegex.m */; };
+		9DB8DED50590C1370039D27C /* get.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC53C92045D6C1500C7B3CF /* get.c */; };
+		9DB8DED60590C1370039D27C /* maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC53C94045D6C1500C7B3CF /* maketables.c */; };
+		9DB8DED70590C1370039D27C /* pcre.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC53C95045D6C1500C7B3CF /* pcre.c */; };
+		9DB8DED80590C1370039D27C /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC53C97045D6C1500C7B3CF /* study.c */; };
+		9DB8DEDA0590C1370039D27C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		9DB8DEDB0590C1370039D27C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC8FEAC0419293800A81608 /* Security.framework */; };
+		9DE658A60930C22400394832 /* FontDisplayNameTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DE658A40930C22400394832 /* FontDisplayNameTransformer.h */; };
+		9DE658A70930C22400394832 /* FontDisplayNameTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE658A50930C22400394832 /* FontDisplayNameTransformer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DB8DEE00590C1430039D27C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB8DE980590C11B0039D27C;
+			remoteInfo = "aless (Upgraded)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1769BF112C5E7FE800B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1769BF132C5E7FE800B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1769BF142C5E7FE800B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/License.rtf; sourceTree = "<group>"; };
+		1769BF172C5E7FE800B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/ReadMe.rtf; sourceTree = "<group>"; };
+		1769BF1A2C5E84D800B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FindPanel.xib; sourceTree = "<group>"; };
+		1769BF1C2C5E84D800B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ReadmeWindow.xib; sourceTree = "<group>"; };
+		1769BF1E2C5E84D900B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1769BF202C5E84D900B3460D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PagerDocument.xib; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* AquaLess_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = AquaLess_Prefix.h; sourceTree = "<group>"; };
+		9D028CDD040FCB7B00A81664 /* PagerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PagerWindowController.h; sourceTree = "<group>"; };
+		9D028CDE040FCB7B00A81664 /* PagerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PagerWindowController.m; sourceTree = "<group>"; };
+		9D028CE1040FDF5900A81664 /* FontHelper.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = FontHelper.h; sourceTree = "<group>"; };
+		9D028CE2040FDF5900A81664 /* FontHelper.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = FontHelper.m; sourceTree = "<group>"; };
+		9D028CF9041284B700A81664 /* InputParser.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = InputParser.h; sourceTree = "<group>"; };
+		9D028CFA041284B700A81664 /* InputParser.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = InputParser.m; sourceTree = "<group>"; };
+		9D028CFD04138A4D00A81664 /* SmartTextInputParser.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = SmartTextInputParser.h; sourceTree = "<group>"; };
+		9D028CFE04138A4D00A81664 /* SmartTextInputParser.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = SmartTextInputParser.m; sourceTree = "<group>"; };
+		9D028D010413A78700A81664 /* HexdumpInputParser.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = HexdumpInputParser.h; sourceTree = "<group>"; };
+		9D028D020413A78700A81664 /* HexdumpInputParser.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = HexdumpInputParser.m; sourceTree = "<group>"; };
+		9D4C893B0415118000A81664 /* RawTextInputParser.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = RawTextInputParser.h; sourceTree = "<group>"; };
+		9D4C893C0415118000A81664 /* RawTextInputParser.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = RawTextInputParser.m; sourceTree = "<group>"; };
+		9D5DDE4906089F2E00A2159C /* MacPAD.url */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text; path = MacPAD.url; sourceTree = "<group>"; };
+		9D5E8A4B040E088400A81664 /* PagerTextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PagerTextView.h; sourceTree = "<group>"; };
+		9D5E8A4C040E088400A81664 /* PagerTextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PagerTextView.m; sourceTree = "<group>"; };
+		9D6053D60419F91700A81608 /* scroll.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = scroll.icns; sourceTree = "<group>"; };
+		9D6B421D042DBD5500F86BBE /* FindPanelController.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = FindPanelController.h; sourceTree = "<group>"; };
+		9D6B421E042DBD5500F86BBE /* FindPanelController.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = FindPanelController.m; sourceTree = "<group>"; };
+		9D7C345B040965FC00A81664 /* PagerDocument.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = PagerDocument.h; sourceTree = "<group>"; };
+		9D7C345C040965FC00A81664 /* PagerDocument.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = PagerDocument.m; sourceTree = "<group>"; };
+		9DA64EEB040C00E300A81664 /* aless.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = aless.m; sourceTree = "<group>"; };
+		9DA64F07040C091400A81664 /* AquaLess_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = AquaLess_Protocol.h; sourceTree = "<group>"; };
+		9DA64F0B040C0D1000A81664 /* MyDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocumentController.m; sourceTree = "<group>"; };
+		9DA64F0C040C0D1000A81664 /* MyDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocumentController.h; sourceTree = "<group>"; };
+		9DB8DEA20590C11B0039D27C /* aless */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = aless; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB8DEDD0590C1370039D27C /* Info-AquaLess.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-AquaLess.plist"; sourceTree = "<group>"; };
+		9DB8DEDE0590C1370039D27C /* AquaLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquaLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC53C8E045D6C1500C7B3CF /* AGRegex.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = AGRegex.h; path = regex/AGRegex.h; sourceTree = "<group>"; };
+		9DC53C8F045D6C1500C7B3CF /* AGRegex.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; name = AGRegex.m; path = regex/AGRegex.m; sourceTree = "<group>"; };
+		9DC53C90045D6C1500C7B3CF /* chartables.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = chartables.c; path = regex/chartables.c; sourceTree = "<group>"; };
+		9DC53C91045D6C1500C7B3CF /* config.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = config.h; path = regex/config.h; sourceTree = "<group>"; };
+		9DC53C92045D6C1500C7B3CF /* get.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = get.c; path = regex/get.c; sourceTree = "<group>"; };
+		9DC53C93045D6C1500C7B3CF /* internal.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = internal.h; path = regex/internal.h; sourceTree = "<group>"; };
+		9DC53C94045D6C1500C7B3CF /* maketables.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = maketables.c; path = regex/maketables.c; sourceTree = "<group>"; };
+		9DC53C95045D6C1500C7B3CF /* pcre.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = pcre.c; path = regex/pcre.c; sourceTree = "<group>"; };
+		9DC53C96045D6C1500C7B3CF /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; name = pcre.h; path = regex/pcre.h; sourceTree = "<group>"; };
+		9DC53C97045D6C1500C7B3CF /* study.c */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.c; name = study.c; path = regex/study.c; sourceTree = "<group>"; };
+		9DC8FEA804191F9400A81608 /* ToolInstaller.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = ToolInstaller.h; sourceTree = "<group>"; };
+		9DC8FEA904191F9400A81608 /* ToolInstaller.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = ToolInstaller.m; sourceTree = "<group>"; };
+		9DC8FEAC0419293800A81608 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		9DCE8DB50416511200A81608 /* ReadmeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.h; path = ReadmeWindowController.h; sourceTree = "<group>"; };
+		9DCE8DB60416511200A81608 /* ReadmeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.c.objc; path = ReadmeWindowController.m; sourceTree = "<group>"; };
+		9DE658A40930C22400394832 /* FontDisplayNameTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontDisplayNameTransformer.h; sourceTree = "<group>"; };
+		9DE658A50930C22400394832 /* FontDisplayNameTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontDisplayNameTransformer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DB8DE9E0590C11B0039D27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8DE9F0590C11B0039D27C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB8DED90590C1370039D27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8DEDA0590C1370039D27C /* Cocoa.framework in Frameworks */,
+				9DB8DEDB0590C1370039D27C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				9DC8FEAC0419293800A81608 /* Security.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8DEA20590C11B0039D27C /* aless */,
+				9DB8DEDE0590C1370039D27C /* AquaLess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* AquaLess */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				9DC53C8D045D6BEA00C7B3CF /* Regex */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = AquaLess;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9DA64F0B040C0D1000A81664 /* MyDocumentController.m */,
+				9DA64F0C040C0D1000A81664 /* MyDocumentController.h */,
+				9D7C345C040965FC00A81664 /* PagerDocument.m */,
+				9D7C345B040965FC00A81664 /* PagerDocument.h */,
+				9D028CDE040FCB7B00A81664 /* PagerWindowController.m */,
+				9D028CDD040FCB7B00A81664 /* PagerWindowController.h */,
+				9D6B421E042DBD5500F86BBE /* FindPanelController.m */,
+				9D6B421D042DBD5500F86BBE /* FindPanelController.h */,
+				9D5E8A4C040E088400A81664 /* PagerTextView.m */,
+				9D5E8A4B040E088400A81664 /* PagerTextView.h */,
+				9D028CFA041284B700A81664 /* InputParser.m */,
+				9D028CF9041284B700A81664 /* InputParser.h */,
+				9D028CFE04138A4D00A81664 /* SmartTextInputParser.m */,
+				9D028CFD04138A4D00A81664 /* SmartTextInputParser.h */,
+				9D4C893C0415118000A81664 /* RawTextInputParser.m */,
+				9D4C893B0415118000A81664 /* RawTextInputParser.h */,
+				9D028D020413A78700A81664 /* HexdumpInputParser.m */,
+				9D028D010413A78700A81664 /* HexdumpInputParser.h */,
+				9DCE8DB60416511200A81608 /* ReadmeWindowController.m */,
+				9DCE8DB50416511200A81608 /* ReadmeWindowController.h */,
+				9DE658A50930C22400394832 /* FontDisplayNameTransformer.m */,
+				9DE658A40930C22400394832 /* FontDisplayNameTransformer.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				32DBCF750370BD2300C91783 /* AquaLess_Prefix.h */,
+				9DA64F07040C091400A81664 /* AquaLess_Protocol.h */,
+				9DA64EEB040C00E300A81664 /* aless.m */,
+				9D028CE2040FDF5900A81664 /* FontHelper.m */,
+				9D028CE1040FDF5900A81664 /* FontHelper.h */,
+				9DC8FEA904191F9400A81608 /* ToolInstaller.m */,
+				9DC8FEA804191F9400A81608 /* ToolInstaller.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1769BF192C5E84D800B3460D /* FindPanel.xib */,
+				1769BF1D2C5E84D900B3460D /* MainMenu.xib */,
+				1769BF1F2C5E84D900B3460D /* PagerDocument.xib */,
+				1769BF1B2C5E84D800B3460D /* ReadmeWindow.xib */,
+				9DB8DEDD0590C1370039D27C /* Info-AquaLess.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				9DCE8DBB04165DCF00A81608 /* ReadMe.rtf */,
+				9DCE8DB904165DCF00A81608 /* License.rtf */,
+				9D6053D60419F91700A81608 /* scroll.icns */,
+				9D5DDE4906089F2E00A2159C /* MacPAD.url */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DC53C8D045D6BEA00C7B3CF /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				9DC53C8F045D6C1500C7B3CF /* AGRegex.m */,
+				9DC53C8E045D6C1500C7B3CF /* AGRegex.h */,
+				9DC53C91045D6C1500C7B3CF /* config.h */,
+				9DC53C96045D6C1500C7B3CF /* pcre.h */,
+				9DC53C95045D6C1500C7B3CF /* pcre.c */,
+				9DC53C93045D6C1500C7B3CF /* internal.h */,
+				9DC53C90045D6C1500C7B3CF /* chartables.c */,
+				9DC53C92045D6C1500C7B3CF /* get.c */,
+				9DC53C94045D6C1500C7B3CF /* maketables.c */,
+				9DC53C97045D6C1500C7B3CF /* study.c */,
+			);
+			name = Regex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9DB8DE990590C11B0039D27C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8DE9A0590C11B0039D27C /* AquaLess_Protocol.h in Headers */,
+				9DB8DE9B0590C11B0039D27C /* AquaLess_Prefix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB8DEA80590C1370039D27C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8DEA90590C1370039D27C /* AquaLess_Prefix.h in Headers */,
+				9DB8DEAA0590C1370039D27C /* PagerDocument.h in Headers */,
+				9DB8DEAB0590C1370039D27C /* AquaLess_Protocol.h in Headers */,
+				9DB8DEAC0590C1370039D27C /* MyDocumentController.h in Headers */,
+				9DB8DEAD0590C1370039D27C /* PagerTextView.h in Headers */,
+				9DB8DEAE0590C1370039D27C /* PagerWindowController.h in Headers */,
+				9DB8DEAF0590C1370039D27C /* FontHelper.h in Headers */,
+				9DB8DEB00590C1370039D27C /* InputParser.h in Headers */,
+				9DB8DEB10590C1370039D27C /* SmartTextInputParser.h in Headers */,
+				9DB8DEB20590C1370039D27C /* HexdumpInputParser.h in Headers */,
+				9DB8DEB30590C1370039D27C /* RawTextInputParser.h in Headers */,
+				9DB8DEB40590C1370039D27C /* ReadmeWindowController.h in Headers */,
+				9DB8DEB50590C1370039D27C /* ToolInstaller.h in Headers */,
+				9DB8DEB60590C1370039D27C /* FindPanelController.h in Headers */,
+				9DB8DEB70590C1370039D27C /* AGRegex.h in Headers */,
+				9DB8DEB80590C1370039D27C /* config.h in Headers */,
+				9DB8DEB90590C1370039D27C /* internal.h in Headers */,
+				9DB8DEBA0590C1370039D27C /* pcre.h in Headers */,
+				9DE658A60930C22400394832 /* FontDisplayNameTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9DB8DE980590C11B0039D27C /* aless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF994030885745D00ABA917 /* Build configuration list for PBXNativeTarget "aless" */;
+			buildPhases = (
+				9DB8DE990590C11B0039D27C /* Headers */,
+				9DB8DE9C0590C11B0039D27C /* Sources */,
+				9DB8DE9E0590C11B0039D27C /* Frameworks */,
+				9DB8DEA00590C11B0039D27C /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aless;
+			productInstallPath = /usr/local/bin;
+			productName = aless;
+			productReference = 9DB8DEA20590C11B0039D27C /* aless */;
+			productType = "com.apple.product-type.tool";
+		};
+		9DB8DEA60590C1370039D27C /* AquaLess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF994070885745D00ABA917 /* Build configuration list for PBXNativeTarget "AquaLess" */;
+			buildPhases = (
+				9DB8DEA80590C1370039D27C /* Headers */,
+				9DB8DEBB0590C1370039D27C /* Resources */,
+				9DB8DEC60590C1370039D27C /* Sources */,
+				9DB8DED90590C1370039D27C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DB8DEE10590C1430039D27C /* PBXTargetDependency */,
+			);
+			name = AquaLess;
+			productName = AquaLess;
+			productReference = 9DB8DEDE0590C1370039D27C /* AquaLess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = 9DF9940B0885745D00ABA917 /* Build configuration list for PBXProject "AquaLess" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* AquaLess */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DB8DEA60590C1370039D27C /* AquaLess */,
+				9DB8DE980590C11B0039D27C /* aless */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DB8DEBB0590C1370039D27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D748A4A0590CC48007AF501 /* aless in Resources */,
+				1769BF242C5E84D900B3460D /* PagerDocument.xib in Resources */,
+				1769BF232C5E84D900B3460D /* MainMenu.xib in Resources */,
+				9DB8DEBC0590C1370039D27C /* Credits.rtf in Resources */,
+				9DB8DEBE0590C1370039D27C /* InfoPlist.strings in Resources */,
+				9DB8DEC00590C1370039D27C /* License.rtf in Resources */,
+				9DB8DEC10590C1370039D27C /* ReadMe.rtf in Resources */,
+				1769BF222C5E84D900B3460D /* ReadmeWindow.xib in Resources */,
+				9DB8DEC40590C1370039D27C /* scroll.icns in Resources */,
+				9D5DDE4A06089F2E00A2159C /* MacPAD.url in Resources */,
+				1769BF212C5E84D900B3460D /* FindPanel.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		9DB8DEA00590C11B0039D27C /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DB8DE9C0590C11B0039D27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8DE9D0590C11B0039D27C /* aless.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB8DEC60590C1370039D27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8DEC70590C1370039D27C /* main.m in Sources */,
+				9DB8DEC80590C1370039D27C /* PagerDocument.m in Sources */,
+				9DB8DEC90590C1370039D27C /* MyDocumentController.m in Sources */,
+				9DB8DECA0590C1370039D27C /* PagerTextView.m in Sources */,
+				9DB8DECB0590C1370039D27C /* PagerWindowController.m in Sources */,
+				9DB8DECC0590C1370039D27C /* FontHelper.m in Sources */,
+				9DB8DECD0590C1370039D27C /* InputParser.m in Sources */,
+				9DB8DECE0590C1370039D27C /* SmartTextInputParser.m in Sources */,
+				9DB8DECF0590C1370039D27C /* HexdumpInputParser.m in Sources */,
+				9DB8DED00590C1370039D27C /* RawTextInputParser.m in Sources */,
+				9DB8DED10590C1370039D27C /* ReadmeWindowController.m in Sources */,
+				9DB8DED20590C1370039D27C /* ToolInstaller.m in Sources */,
+				9DB8DED30590C1370039D27C /* FindPanelController.m in Sources */,
+				9DB8DED40590C1370039D27C /* AGRegex.m in Sources */,
+				9DB8DED50590C1370039D27C /* get.c in Sources */,
+				9DB8DED60590C1370039D27C /* maketables.c in Sources */,
+				9DB8DED70590C1370039D27C /* pcre.c in Sources */,
+				9DB8DED80590C1370039D27C /* study.c in Sources */,
+				9DE658A70930C22400394832 /* FontDisplayNameTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DB8DEE10590C1430039D27C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DB8DE980590C11B0039D27C /* aless */;
+			targetProxy = 9DB8DEE00590C1430039D27C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF132C5E7FE800B3460D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1769BF192C5E84D800B3460D /* FindPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF1A2C5E84D800B3460D /* en */,
+			);
+			name = FindPanel.xib;
+			sourceTree = "<group>";
+		};
+		1769BF1B2C5E84D800B3460D /* ReadmeWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF1C2C5E84D800B3460D /* en */,
+			);
+			name = ReadmeWindow.xib;
+			sourceTree = "<group>";
+		};
+		1769BF1D2C5E84D900B3460D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF1E2C5E84D900B3460D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1769BF1F2C5E84D900B3460D /* PagerDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF202C5E84D900B3460D /* en */,
+			);
+			name = PagerDocument.xib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF112C5E7FE800B3460D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9DCE8DB904165DCF00A81608 /* License.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF142C5E7FE800B3460D /* en */,
+			);
+			name = License.rtf;
+			sourceTree = "<group>";
+		};
+		9DCE8DBB04165DCF00A81608 /* ReadMe.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1769BF172C5E7FE800B3460D /* en */,
+			);
+			name = ReadMe.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DF994040885745D00ABA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GRLEYRF2K9;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AquaLess_Prefix.h;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = aless;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		9DF994050885745D00ABA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GRLEYRF2K9;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AquaLess_Prefix.h;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = aless;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9DF994080885745D00ABA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GRLEYRF2K9;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AquaLess_Prefix.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SUPPORT_UTF8,
+					"POSIX_MALLOC_THRESHOLD=10",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Info-AquaLess.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = de.chrisp.AquaLess;
+				PRODUCT_NAME = AquaLess;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		9DF994090885745D00ABA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = GRLEYRF2K9;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AquaLess_Prefix.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SUPPORT_UTF8,
+					"POSIX_MALLOC_THRESHOLD=10",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Info-AquaLess.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = de.chrisp.AquaLess;
+				PRODUCT_NAME = AquaLess;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9DF9940C0885745D00ABA917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX.sdk";
+			};
+			name = Debug;
+		};
+		9DF9940D0885745D00ABA917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DF994030885745D00ABA917 /* Build configuration list for PBXNativeTarget "aless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF994040885745D00ABA917 /* Debug */,
+				9DF994050885745D00ABA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF994070885745D00ABA917 /* Build configuration list for PBXNativeTarget "AquaLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF994080885745D00ABA917 /* Debug */,
+				9DF994090885745D00ABA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF9940B0885745D00ABA917 /* Build configuration list for PBXProject "AquaLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF9940C0885745D00ABA917 /* Debug */,
+				9DF9940D0885745D00ABA917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
